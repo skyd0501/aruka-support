@@ -4,94 +4,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aruka サポート</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.8;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 32px 20px;
-      color: #222;
-      background: #f8fafc;
-    }
-    main {
-      background: #fff;
-      padding: 28px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 16px;
-    }
-    h2 {
-      margin-top: 32px;
-      font-size: 20px;
-    }
-    a {
-      color: #007aff;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 10px 18px;
-      background: #007aff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 600;
-    }
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
+  <meta name="description" content="家計簿アプリ Aruka のサポートページです。お問い合わせ先とプライバシーポリシーを掲載しています。">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main>
-    <h1>Aruka サポート</h1>
-
-    <p>
-      Arukaは、「今日あと何円使えるか」がひと目でわかる家計簿アプリです。
-    </p>
-
-    <h2>お問い合わせ</h2>
-    <p>
-      不具合の報告、ご意見、ご要望は以下のフォームからお問い合わせください。
-    </p>
-
-    <p>
-      <a class="button" href="ここにGoogleフォームのURLを入れる" target="_blank" rel="noopener">
-        お問い合わせフォーム
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="Aruka サポート トップ">
+        <span class="brand-mark">A</span>
+        <span>
+          <span class="brand-name">Aruka</span>
+          <span class="brand-label">Support</span>
+        </span>
       </a>
-    </p>
+      <nav class="nav" aria-label="ページ内メニュー">
+        <a href="#contact">お問い合わせ</a>
+        <a href="./privacy.html">プライバシー</a>
+      </nav>
+    </header>
 
-    <h2>よくある質問</h2>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">家計簿アプリ Aruka</p>
+          <h1 id="hero-title">今日あと何円使えるかを、すぐに確認。</h1>
+          <p class="lead">
+            Arukaは、収入・固定費・貯金・予定支出をもとに、今月と今日の使える金額を見える化する家計簿アプリです。
+          </p>
+          <div class="actions">
+            <a class="button" href="#contact">問い合わせる</a>
+            <a class="button secondary" href="./privacy.html">プライバシーポリシー</a>
+          </div>
+        </div>
 
-    <p>
-      <strong>Q. データはどこに保存されますか？</strong><br>
-      A. 入力した収入、支出、固定費、予定支出などのデータは端末内に保存されます。
-    </p>
+        <aside class="app-panel" aria-label="Arukaの表示イメージ">
+          <div class="amount-card">
+            <p class="amount-label">今日使える金額</p>
+            <p class="amount">¥3,240</p>
+            <p class="note">残り予算から日割りで目安を表示します。</p>
+            <div class="meter" aria-hidden="true"><span></span></div>
+          </div>
+          <ul class="mini-list">
+            <li><span>今月使える金額</span><strong>¥42,100</strong></li>
+            <li><span>予定支出</span><strong>¥8,500</strong></li>
+            <li><span>固定貯金</span><strong>¥20,000</strong></li>
+          </ul>
+        </aside>
+      </section>
 
-    <p>
-      <strong>Q. 今日使える金額はどのように計算されますか？</strong><br>
-      A. 収入から固定費、固定貯金、予定支出、支出を差し引き、残り期間に応じて計算します。
-    </p>
+      <section class="section plain" aria-labelledby="features-title">
+        <h2 id="features-title">サポート内容</h2>
+        <div class="grid">
+          <article class="info-card">
+            <h3>不具合の報告</h3>
+            <p>画面表示、入力、計算結果などで気になる点があればご連絡ください。</p>
+          </article>
+          <article class="info-card">
+            <h3>ご意見・ご要望</h3>
+            <p>追加してほしい機能や改善してほしい操作があればお知らせください。</p>
+          </article>
+          <article class="info-card">
+            <h3>プライバシー</h3>
+            <p>保存される情報や利用目的は、プライバシーポリシーで確認できます。</p>
+          </article>
+        </div>
+      </section>
 
-    <p>
-      <strong>Q. ログインは必要ですか？</strong><br>
-      A. ログインなしで利用できます。
-    </p>
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <h2 id="contact-title">お問い合わせ</h2>
+        <p>
+          不具合の報告、ご意見、ご要望は以下のメールアドレスまでご連絡ください。
+          返信には数日かかる場合があります。
+        </p>
+        <div class="actions">
+          <a class="button" href="mailto:support@example.com">
+            support@example.com
+          </a>
+        </div>
+        <p class="note">
+          公開前に、このメールアドレスを実際のサポート用メールアドレスへ差し替えてください。
+        </p>
+      </section>
+    </main>
 
-    <h2>プライバシーポリシー</h2>
-    <p>
-      <a href="./privacy.html">プライバシーポリシーはこちら</a>
-    </p>
-
-    <p class="footer">
-      © 2026 Yudai Suzuki
-    </p>
-  </main>
+    <footer class="site-footer">
+      <span>© 2026 Yudai Suzuki</span>
+      <a href="./privacy.html">プライバシーポリシー</a>
+    </footer>
+  </div>
 </body>
 </html>
