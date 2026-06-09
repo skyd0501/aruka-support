@@ -109,6 +109,15 @@ a {
   margin-bottom: 36px;
 }
 
+.policy-hero {
+  display: block;
+}
+
+.policy-hero h1,
+.policy-hero .lead {
+  max-width: 840px;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   color: var(--accent-strong);
